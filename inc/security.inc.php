@@ -1,0 +1,6 @@
+<?php
+
+/**
+ * Copyright (c) mojito
+ * 
+ */
