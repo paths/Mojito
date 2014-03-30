@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-03-23 20:24:38
+<?php /* Smarty version Smarty-3.1.16, created on 2014-03-29 02:23:54
          compiled from "templates\footer.php" */ ?>
 <?php /*%%SmartyHeaderCode:21086532dc084895561-70013160%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'acfb533e5a1d057fe4c06669141930f834479d3a' => 
     array (
       0 => 'templates\\footer.php',
-      1 => 1395577472,
+      1 => 1396030813,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                 <a href="help.php">帮助中心</a>
                             </li>
                             <li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
-                                <a href="policy.php">创建广告</a>
+                                <a href="company/index.php">广告平台</a>
                             </li>
                             <li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
                                 <a href="policy.php">私隐政策</a>
@@ -43,12 +43,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
                 </nav>
                 <div class="credits">©2014 doupit.com</div>
-            </div>
-            <div class="nav-tip">
-                使用箭头
-                <a href="#" class="button-minimal icon-left-open-mini" id="key-left"></a>
-                <a href="#" class="button-minimal icon-right-open-mini" id="key-right"></a>
-                来导航
             </div>
         </div>
     </footer>

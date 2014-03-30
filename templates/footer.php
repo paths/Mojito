@@ -10,7 +10,7 @@
                                 <a href="help.php">帮助中心</a>
                             </li>
                             <li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
-                                <a href="policy.php">创建广告</a>
+                                <a href="company/index.php">广告平台</a>
                             </li>
                             <li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
                                 <a href="policy.php">私隐政策</a>
@@ -22,12 +22,6 @@
                     </div>
                 </nav>
                 <div class="credits">©2014 doupit.com</div>
-            </div>
-            <div class="nav-tip">
-                使用箭头
-                <a href="#" class="button-minimal icon-left-open-mini" id="key-left"></a>
-                <a href="#" class="button-minimal icon-right-open-mini" id="key-right"></a>
-                来导航
             </div>
         </div>
     </footer>

@@ -28,8 +28,10 @@ if(empty($word)){
     header("Location:member.php");
 }
 
+$arrVar['title'] = "Doupit | ".$word;
 $oSearch = new MojDoSearch();
-$oSearch->setObject(LUCENE_PATH);
+$oSearch->setIdxPath(LUCENE_PATH);
+$oSearch->setEncoded("utf-8");
 
 if((!empty($_COOKIE['memberID'])) && $_COOKIE['memberID'] && (!empty($_COOKIE['memberPassword'])) && $_COOKIE['memberPassword']){
     
@@ -40,10 +42,13 @@ if((!empty($_COOKIE['memberID'])) && $_COOKIE['memberID'] && (!empty($_COOKIE['m
     $arrVar['right1href'] = '<a href="'.$site['url'].'member.php">';
     $arrVar['right2href'] = ( (!empty($_COOKIE['memberID']) &&  $_COOKIE['memberID']) && $_COOKIE['memberPassword'] ) ? '<a href="'.$site['url'].'logout.php">' : '<a href="'.$site['url'].'register.php">';
     $arrVar['hrefend'] = '</a>';
+    $arrVar['searchword'] = $word;
     
     $searchArray = $oSearch->search($word);
+    $arrVar['result_count'] = count($searchArray);
     $arrVar['result'] = $searchArray;
     
+    $oPageView = new MojTemplSearchPageView();
     $oPageView->setTpl($oPage);
     $oPageView->addParam($arrVar);
     PageCode();

@@ -1044,11 +1044,15 @@ img.size-full {
 	margin: 10px 0 0 0;
 	overflow: hidden;
 }
-
+#memu-search {
+	top:5px;
+}
 .widget #searchsubmit {
 	display: none;
 }
-
+.menu-item #searchsubmit {
+	display: none;
+}
 .entry-content #searchform {
 	float: none;
 }

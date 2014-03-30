@@ -12,8 +12,9 @@ require_once( MOJ_DIRECTORY_PATH_INC . 'design.inc.php' );
 require_once( MOJ_DIRECTORY_PATH_INC . 'admin.inc.php' );
 require_once( MOJ_DIRECTORY_PATH_INC . 'db.inc.php' );
 
-moj_import('MojTemplRegisterPageView');
 moj_import("MojDoProfilesController");
+moj_import("MojDoSearch");
+moj_import('MojTemplRegisterPageView');
 moj_import('MojTemplMemberPageView');
 
 check_logged();
@@ -30,17 +31,23 @@ if(isset($_POST['RegEmail']) && $_POST['RegEmail'] && isset($_POST['RegPassword'
     $member['Password'] = process_pass_data(empty($_POST['RegPassword']) ? '' : $_POST['RegPassword']);
     
     $oProfiles = new MojDoProfilesController();
+    $oSearchObj = new MojDoSearch();
+    $oSearchObj->setIdxPath(LUCENE_PATH);
+    $oSearchObj->setEncoded("utf-8");
+    
     $aData['ID'] = $member['ID'];
     $aData['Password'] = $member['Password'];
     
-    if($oProfiles->checkUserExist($aData['ID']) > 0)
+    if(getProfileInfoDirect($aData['ID']))
     {
         header("Location:".$site['url']."register.php");
+        exit;
     }
     
     $res = $oProfiles->createProfile($aData);
     
     if($res && is_array($res)){
+        $oSearchObj->insert('email', strtolower($member['ID']));
         $aUser['Password'] = $res['Password'];
         moj_login($member['ID'],true);
         header("Location:".$site['url']."member.php");
