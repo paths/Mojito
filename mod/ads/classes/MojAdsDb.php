@@ -4,14 +4,14 @@
  * for ads public
  */
 
-require_once("../../inc/header.inc.php");
+//require_once( '../../../inc/header.inc.php' );
 require_once( MOJ_DIRECTORY_PATH_INC . 'db.inc.php' );
 
 moj_import("MojDoDb");
 
-class MojAdsConnection extends MojDoDb 
+class MojAdsDb extends MojDoDb 
 {
-    function MojAdsConnection()
+    function MojAdsDb()
     {
         parent::MojDoDb();
     }
@@ -31,7 +31,23 @@ class MojAdsConnection extends MojDoDb
         return db_res($sQuery);
     }
     
+    function getAdsList($Max)
+    {
+        $sQuery = "SELECT * FROM ads limit {$Max}";
+        
+        $tmpArr = $this->getAll($sQuery);
+        
+        return $tmpArr;
+    }
     
+    function getAdsListByCompany($email, $iMax)
+    {
+        $sQuery = "SELECT * FROM ads WHERE CompanyEmail = '{$email}' limit {$Max}";
+        
+        $tmpArr = $this->getAll($sQuery);
+        
+        return $tmpArr;
+    }
 }
 
 

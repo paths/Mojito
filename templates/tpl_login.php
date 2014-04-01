@@ -10,8 +10,8 @@
                     <h1 class="entry-title">Login Doupit.</h1>
                         <div class="entry-content">
                             <form action="login.php" method="post">
-                                Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="input" name="LoginEmail" /><label id="ValLoginName"></label><br /><br />
-                                Password:<input type="password" name="LoginPassword" /><label name="ValLoginPassword"></label><br /><br />
+                                Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="input" id="iLoginEmail" name="nLoginEmail" /><label id="iValLoginName"></label><br /><br />
+                                Password:<input type="password" id="iLoginPassword" name="nLoginPassword" /><label id="iValLoginPassword"></label><br /><br />
                                 Remember Me&nbsp;&nbsp;&nbsp;<input  type="checkbox" name="rememberMe" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="登录" OnClick="return ValLogin();" />
                             </form>
                         </div>

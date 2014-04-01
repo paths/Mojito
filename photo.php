@@ -26,7 +26,7 @@ $arrVar['right1href'] = '<a href="'.$site['url'].'member.php">';
 $arrVar['right2href'] = ( (!empty($_COOKIE['memberID']) &&  $_COOKIE['memberID']) && $_COOKIE['memberPassword'] ) ? '<a href="'.$site['url'].'logout.php">' : '<a href="'.$site['url'].'register.php">';
 $arrVar['hrefend'] = '</a>';
 
-$arrVar['img'] = 'templates/img/iceland.jpg';
+$arrVar['img'] = 'templates/img/alt.jpg';//图片源
 $arrVar['ads'] = '<div class="info style-default black" style="overflow: hidden; top: 10.62%; left: 5.94%; height: auto;" data-position="custom" data-left="5.94%" data-top="10.62%">';
 $arrVar['ads'] .= '<div class="viewport" style="-webkit-transition: -webkit-transform 0ms; transition: -webkit-transform 0ms; -webkit-transform-origin: 0px 0px; -webkit-transform: translate(0px, 0px) translateZ(0px);">';
 

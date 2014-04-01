@@ -12,12 +12,12 @@ require_once( MOJ_DIRECTORY_PATH_INC . 'utils.inc.php' );
 
 $aUser = array();
 
-$member['ID']    = process_pass_data(empty($_POST['LoginEmail']) ? '' : $_POST['LoginEmail']);
-$member['Password'] = process_pass_data(empty($_POST['LoginPassword']) ? '' : $_POST['LoginPassword']);
+$member['ID']    = process_pass_data(empty($_POST['nLoginEmail']) ? '' : $_POST['nLoginEmail']);
+$member['Password'] = process_pass_data(empty($_POST['nLoginPassword']) ? '' : $_POST['nLoginPassword']);
 
 $bAjxMode = ( isset( $_SERVER['HTTP_X_REQUESTED_WITH'] ) and $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' ) ? true : false;
 
-if ( isset($_POST['LoginEmail']) && $_POST['LoginEmail'] && isset($_POST['LoginPassword']) && $_POST['LoginPassword'] ) {
+if ( isset($_POST['nLoginEmail']) && $_POST['nLoginEmail'] && isset($_POST['nLoginPassword']) && $_POST['nLoginPassword'] ) {
     
     $rRes = getProfileInfo($member['ID']);
     if($rRes){

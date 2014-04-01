@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2014-03-23 00:01:28
-         compiled from "templates\footer.html" */ ?>
-<?php /*%%SmartyHeaderCode:4192532db3d84008e3-78088482%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /* Smarty version Smarty-3.1.16, created on 2014-03-31 20:45:56
+         compiled from "templates\footer.php" */ ?>
+<?php /*%%SmartyHeaderCode:203065339638495c420-19594426%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
-    '67f527e541be90c4cad3c44298224522015dc554' => 
+    'acfb533e5a1d057fe4c06669141930f834479d3a' => 
     array (
-      0 => 'templates\\footer.html',
-      1 => 1395420093,
+      0 => 'templates\\footer.php',
+      1 => 1396030813,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '4192532db3d84008e3-78088482',
+  'nocache_hash' => '203065339638495c420-19594426',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_532db3d840bb30_12712526',
+  'unifunc' => 'content_5339638499c777_14542928',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_532db3d840bb30_12712526')) {function content_532db3d840bb30_12712526($_smarty_tpl) {?>    <footer id="footer">
+<?php if ($_valid && !is_callable('content_5339638499c777_14542928')) {function content_5339638499c777_14542928($_smarty_tpl) {?>    <footer id="footer">
         <div class="footer-inner clearfix">
 
             <div class="social-networks"></div>
@@ -27,6 +27,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <nav class="footer-navigation">
                     <div class="menu-footer-menu-container">
                         <ul id="menu-footer-menu" class="menu">
+                            <li id="menu-item-417" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
+                                <a href="help.php">帮助中心</a>
+                            </li>
+                            <li id="menu-item-457" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
+                                <a href="company/index.php">广告平台</a>
+                            </li>
                             <li id="menu-item-477" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-477">
                                 <a href="policy.php">私隐政策</a>
                             </li>
@@ -37,12 +43,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                     </div>
                 </nav>
                 <div class="credits">©2014 doupit.com</div>
-            </div>
-            <div class="nav-tip">
-                使用箭头
-                <a href="#" class="button-minimal icon-left-open-mini" id="key-left"></a>
-                <a href="#" class="button-minimal icon-right-open-mini" id="key-right"></a>
-                来导航
             </div>
         </div>
     </footer>

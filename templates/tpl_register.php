@@ -10,9 +10,9 @@
                         	<h1 class="entry-title">Register Doupit.</h1>
 					<div class="entry-content">
                                             <form action="register.php" method="post">
-                                                Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="input" name="RegEmail" onChange="return checkUserExist();" /><label name="ValRegUsername"></label><br /><br />
-                                                密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="RegPassword" /><label name="ValRegPassword"></label><br /><br />
-                                                确认密码:&nbsp;&nbsp;&nbsp;<input type="password" name="RegConfirmPassword" /><label name="ValRegComfirmPassword"></label><br /><br />
+                                                Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="input" id="iRegEmail" name="nRegEmail" onChange="return checkUserExist();" /><label id="iValRegUsername"></label><br /><br />
+                                                密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" id="iRegPassword" name="nRegPassword" /><label id="iValRegPassword"></label><br /><br />
+                                                确认密码:&nbsp;&nbsp;&nbsp;<input type="password" id="iRegConfirmPassword" name="nRegConfirmPassword" /><label id="iValRegComfirmPassword"></label><br /><br />
                                                 <input class="button button-white" value="注册" type="submit" onClick="return ValRegister();" />
                                             </form>
 					</div>

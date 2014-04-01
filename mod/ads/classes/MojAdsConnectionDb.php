@@ -21,11 +21,6 @@ class MojAdsConnectionDb extends MojDoDb
     {
         parent::MojDolDb();
     }
-
-    function getAdsLogoList()
-    {
-        
-    }
     
     /* 图片使用该LOGO */
     function initPhotoAds($ads, $photo)
@@ -42,9 +37,8 @@ class MojAdsConnectionDb extends MojDoDb
         return getFirstRow($sQuery);
     }
 
-
     /**/
-    function adsClick($PhotoId, $AdsId)
+    function adsClickConnection($PhotoId, $AdsId)
     {
         $sQuery = "UPDATE ads_connection SET ClickCount = ClickCount+1 WHERE PhotoId = '{$PhotoId}' AND AdsId = '{$AdsId}'";
         

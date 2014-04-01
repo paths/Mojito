@@ -26,9 +26,9 @@ if (isLogged()) {
     exit;
 }
 
-if(isset($_POST['RegEmail']) && $_POST['RegEmail'] && isset($_POST['RegPassword']) &&$_POST['RegPassword']){
-    $member['ID']	= process_pass_data(empty($_POST['RegEmail']) ? '' : $_POST['RegEmail']);
-    $member['Password'] = process_pass_data(empty($_POST['RegPassword']) ? '' : $_POST['RegPassword']);
+if(isset($_POST['nRegEmail']) && $_POST['nRegEmail'] && isset($_POST['nRegPassword']) &&$_POST['nRegPassword']){
+    $member['ID']	= process_pass_data(empty($_POST['nRegEmail']) ? '' : $_POST['nRegEmail']);
+    $member['Password'] = process_pass_data(empty($_POST['nRegPassword']) ? '' : $_POST['nRegPassword']);
     
     $oProfiles = new MojDoProfilesController();
     $oSearchObj = new MojDoSearch();
